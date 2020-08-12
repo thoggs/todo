@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { CircleComponent } from './svg/circle/circle.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CircleComponent
   ],
   imports: [
     BrowserModule,

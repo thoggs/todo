@@ -1,22 +1,24 @@
 
-<h1 class="text-center m-4">{{ title }}</h1>
+<h1 class="text-center text-white m-4">{{ title }}</h1>
 
 <p *ngIf="todos.length == 0"><small>Não tem nenhuma tarefa hoje</small></p>
 
 <ul>
-    <li *ngFor="let todo of todos"> {{ todo.title }}
-        <button *ngIf="!todo.done" (click)="markAsDone(todo)">CONCLUIR</button>
-        <button *ngIf="todo.done" (click)="markAsUndone(todo)">REFAZER</button>
-        <button (click)="markAsRemove(todo)">REMOVER</button>
-    </li>
+  <li *ngFor="let todo of todos"> {{ todo.title }}
+    <button *ngIf="!todo.done" (click)="markAsDone(todo)">CONCLUIR</button>
+    <button *ngIf="todo.done" (click)="markAsUndone(todo)">REFAZER</button>
+    <button (click)="markAsRemove(todo)">REMOVER</button>
+  </li>
 </ul>
 
 <form class="text-center" [formGroup]="form">
-    <fieldset>
-        <label>
-            <input type="text" placeholder="Título da Tarefa" maxlength="60" formControlName="title">
-            <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>
-            <button class="btn btn-primary p-3 m-2" style="border-radius: 25px" [disabled]="form.invalid" (click)="add()">Salvar</button>
-        </label>
-    </fieldset>
+  <fieldset>
+    <label>
+      <input type="text" placeholder="Título da Tarefa" maxlength="60" formControlName="title">
+      <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>
+      <button class="btn btn-primary p-3 m-2" style="border-radius: 25px" [disabled]="form.invalid" (click)="add()">
+        <app-circle></app-circle>
+        Salvar</button>
+    </label>
+  </fieldset>
 </form>
