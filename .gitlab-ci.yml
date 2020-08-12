@@ -36,7 +36,7 @@ pages:
   script:
     - npm install -g @angular/cli
     - npm install
-    - ng build --base-href=/crud-angular-api/
+    - ng build --base-href=/todo/
   artifacts:
     paths:
       - public
