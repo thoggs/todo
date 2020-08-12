@@ -1,4 +1,6 @@
-# Todo
+# Todo [![pipeline status](https://gitlab.com/thoggs/todo/badges/master/pipeline.svg)](https://gitlab.com/thoggs/todo/-/commits/master)
+
+Todo preview [demo](https://thoggs.gitlab.io/todo)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
