@@ -5,9 +5,9 @@
 
 <ul>
   <li *ngFor="let todo of todos"> {{ todo.title }}
-    <button *ngIf="!todo.done" (click)="markAsDone(todo)">CONCLUIR</button>
-    <button *ngIf="todo.done" (click)="markAsUndone(todo)">REFAZER</button>
-    <button (click)="markAsRemove(todo)">REMOVER</button>
+    <button *ngIf="!todo.done" (click)="markAsDone(todo)"><app-done></app-done></button>
+    <button *ngIf="todo.done" (click)="markAsUndone(todo)"><app-remake></app-remake></button>
+    <button (click)="markAsRemove(todo)"><app-minus></app-minus></button>
   </li>
 </ul>
 
