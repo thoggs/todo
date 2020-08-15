@@ -1,6 +1,6 @@
 # Todo [![pipeline status](https://gitlab.com/thoggs/todo/badges/master/pipeline.svg)](https://gitlab.com/thoggs/todo/-/commits/master) <a href="https://opensource.org/licenses/MIT"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 
-- Todo preview: [Demo](https://thoggs.gitlab.io/todo)
+- Todo preview: [Todo - Lista de Tarefas](https://thoggs.gitlab.io/todo)
 
 ## Development server
 
