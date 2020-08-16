@@ -1,4 +1,3 @@
-
 <h1 data-aos="fade-down" class="text-center text-white m-4">{{ title }}</h1>
 
 <p *ngIf="todos.length == 0" class="text-white text-center font-monospace" data-aos="fade-right">
@@ -7,21 +6,29 @@
 
 <ul *ngIf="todos.length != 0" data-aos="fade-left">
   <li *ngFor="let todo of todos">{{ todo.title }}
-    <button *ngIf="!todo.done" (click)="markAsDone(todo)"><app-done></app-done></button>
-    <button *ngIf="todo.done" (click)="markAsUndone(todo)"><app-remake></app-remake></button>
-    <button (click)="markAsRemove(todo)"><app-minus></app-minus></button>
+    <button *ngIf="!todo.done" (click)="markAsDone(todo)">
+      <app-done></app-done>
+    </button>
+    <button *ngIf="todo.done" (click)="markAsUndone(todo)">
+      <app-remake></app-remake>
+    </button>
+    <button (click)="markAsRemove(todo)">
+      <app-minus></app-minus>
+    </button>
   </li>
 </ul>
 
-<form [formGroup]="form" data-aos="fade-up" class="text-center" >
+<form [formGroup]="form" data-aos="fade-up" class="text-center">
   <fieldset>
     <label>
       <input class="form-control mt-4 mb-3" type="text" placeholder="Título da Tarefa" maxlength="60"
              formControlName="title" style="border-radius: 15px">
-      <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>
+      <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60
+        caracteres</small>
       <button class="btn btn-primary p-3 m-2" style="border-radius: 25px" [disabled]="form.invalid" (click)="add()">
         <app-circle></app-circle>
-        Salvar</button>
+        Salvar
+      </button>
     </label>
   </fieldset>
 </form>
