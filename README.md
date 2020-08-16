@@ -2,7 +2,7 @@
 
 - Todo preview: [Todo - Lista de Tarefas](https://thoggs.gitlab.io/todo)
 
-- Este projeto destina-se á todos aqueles que têm como objetivo aprender mais sobre Angular (Reactive Form).
+- Este projeto destina-se á todos aqueles que têm como objetivo aprender sobre o Reactive Form do Angular.
 
 ## Development server
 
