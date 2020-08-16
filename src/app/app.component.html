@@ -1,9 +1,9 @@
 
-<h1 class="text-center text-white m-4">{{ title }}</h1>
+<h1 data-aos="fade-down" class="text-center text-white m-4">{{ title }}</h1>
 
 <p *ngIf="todos.length == 0"><small>Não tem nenhuma tarefa hoje</small></p>
 
-<ul>
+<ul *ngIf="todos.length != 0" data-aos="fade-left">
   <li *ngFor="let todo of todos"> {{ todo.title }}
     <button *ngIf="!todo.done" (click)="markAsDone(todo)"><app-done></app-done></button>
     <button *ngIf="todo.done" (click)="markAsUndone(todo)"><app-remake></app-remake></button>
@@ -11,7 +11,7 @@
   </li>
 </ul>
 
-<form data-aos="fade-up" class="text-center" [formGroup]="form">
+<form [formGroup]="form" data-aos="fade-up" class="text-center" >
   <fieldset>
     <label>
       <input type="text" placeholder="Título da Tarefa" maxlength="60" formControlName="title">
