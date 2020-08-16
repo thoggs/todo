@@ -2,6 +2,8 @@
 
 - Todo preview: [Todo - Lista de Tarefas](https://thoggs.gitlab.io/todo)
 
+- Este projeto destina-se á todos aqueles que têm como objetivo aprender mais sobre Angular (Reactive Form).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
